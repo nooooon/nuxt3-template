@@ -1,0 +1,75 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  background: #FFF;
+  color: #333;
+  font-size: 62.5%;
+  height: 100%;
+  width: 100%;
+  -webkit-overflow-scrolling: touch;
+  touch-action: manipulation;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  font-feature-settings: "palt";
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  height: 100%;
+  overscroll-behavior: none;
+  width: 100%;
+}
+
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  color: #000;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+ul, li, ol, dl{
+  list-style-type: none;
+}
+
+svg {
+  width: 100%;
+
+  &:not(:root) {
+    overflow: hidden;
+  }
+}
+
+img {
+  height: auto;
+  vertical-align: bottom;
+  width: 100%;
+}
+
+video {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+button {
+  -webkit-tap-highlight-color: #333;
+  color: #333;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+}
+
+input, textarea {
+  background: none;
+  vertical-align: bottom;
+
+  &::placeholder {
+    color: #868686;
+  }
+}
