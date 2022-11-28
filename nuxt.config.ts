@@ -47,7 +47,19 @@ export default defineNuxtConfig({
       ],
       script: [
         { src: 'https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.9/dat.gui.min.js'}
+      ],
+      noscript: [
+        { children: 'Javascript is required' }
       ]
     },
+  },
+  postcss: {
+    plugins: {
+      autoprefixer: {
+      },
+    },
+  },
+  build: {
+    transpile: ["gsap"]
   }
 })
