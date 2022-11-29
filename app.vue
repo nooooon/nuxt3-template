@@ -12,11 +12,18 @@
 
 <script setup lang="ts">
 
+import { isLargeScreen, isMobileScreen } from 'assets/js/mediaQuery'
+
 onMounted(() => {
 
   window.onload = () => {
     document.addEventListener('touchstart',function(){})
   }
+
+})
+
+watchEffect(() => {
+  // console.log("isMobileScreen: ", isMobileScreen.value)
 })
 </script>
 
